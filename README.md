@@ -20,7 +20,23 @@ Or install it yourself as:
 
 ## Usage
 
-( ⁰⊖⁰): Write usage instructions here
+```ruby
+client = Esa::Client.new(access_token: "<access_token>", api_endpoint: "http://api.esa.dev", current_team: 'foo')
+client.team
+client.team('bar')
+client.teams
+client.posts
+client.post(1)
+client.update_post(1, name: 'baz')
+client.current_team = 'foobar'
+
+client.send_post
+client.send_get
+client.send_patch
+client.send_delete
+client.send_put
+client.send_request
+```
 
 ## Contributing
 
